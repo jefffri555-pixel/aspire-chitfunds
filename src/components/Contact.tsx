@@ -24,6 +24,10 @@ export default function Contact() {
     setError('');
 
     try {
+      if (!supabase) {
+        throw new Error('Contact form submission is unavailable right now.');
+      }
+
       const { error: insertError } = await supabase
         .from('contact_submissions')
         .insert([
