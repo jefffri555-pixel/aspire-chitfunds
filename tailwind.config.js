@@ -4,9 +4,9 @@ module.exports = {
     extend: {
       colors: {
         emerald: {
-          deep: '#4F140A',
-          medium: '#4F140A',
-          light: '#4F140A',
+          deep: '#FF0000',
+          medium: '#FF0000',
+          light: '#FF0000',
         },
         gold: {
           rich: '#CFAF5D',
@@ -25,9 +25,9 @@ module.exports = {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
-        'emerald-gradient': 'linear-gradient(135deg, #4F140A 0%, #4F140A 50%, #4F140A 100%)',
+        'emerald-gradient': 'linear-gradient(135deg, #FF0000 0%, #FF0000 50%, #FF0000 100%)',
         'gold-gradient': 'linear-gradient(135deg, #CFAF5D 0%, #E4C77A 50%, #CFAF5D 100%)',
-        'hero-gradient': 'linear-gradient(135deg, rgba(79,20,10,0.95) 0%, rgba(79,20,10,0.90) 50%, rgba(79,20,10,0.95) 100%)',
+        'hero-gradient': 'linear-gradient(135deg, rgba(255,0,0,0.95) 0%, rgba(255,0,0,0.90) 50%, rgba(255,0,0,0.95) 100%)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
@@ -69,12 +69,13 @@ module.exports = {
       boxShadow: {
         'gold': '0 4px 24px rgba(207,175,93,0.3)',
         'gold-lg': '0 8px 48px rgba(207,175,93,0.4)',
-        'emerald': '0 4px 24px rgba(79,20,10,0.4)',
+        'emerald': '0 4px 24px rgba(255,0,0,0.4)',
         'glass': '0 8px 32px rgba(0,0,0,0.15)',
       },
     },
   },
   plugins: [],
 };
+
 
 

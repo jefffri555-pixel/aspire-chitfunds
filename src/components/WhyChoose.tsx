@@ -53,7 +53,7 @@ export default function WhyChoose() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
+    <section ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#CFAF5D]/5 rounded-full -translate-y-1/3 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#CFAF5D]/5 rounded-full translate-y-1/3 -translate-x-1/3" />
 
@@ -73,7 +73,7 @@ export default function WhyChoose() {
           {features.map(({ icon: Icon, title, desc, tag }, i) => (
             <div
               key={title}
-              className="reveal group p-7 rounded-2xl border border-[#CFAF5D]/15 bg-[#4F140A]/40 hover:bg-[#4F140A]/60 hover:border-[#CFAF5D]/40 transition-all duration-400 premium-card"
+              className="reveal group p-7 rounded-2xl border border-[#CFAF5D]/15 bg-[#FF0000]/40 hover:bg-[#FF0000]/60 hover:border-[#CFAF5D]/40 transition-all duration-400 premium-card"
             >
               <div className="w-14 h-14 rounded-xl bg-[#CFAF5D]/10 flex items-center justify-center mb-5 group-hover:bg-[#CFAF5D]/20 transition-colors duration-300">
                 <Icon className="text-[#CFAF5D]" size={26} />
@@ -97,5 +97,6 @@ export default function WhyChoose() {
     </section>
   );
 }
+
 
 

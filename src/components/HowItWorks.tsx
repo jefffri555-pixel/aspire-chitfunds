@@ -7,28 +7,28 @@ const steps = [
     icon: Search,
     title: 'Choose a Scheme',
     desc: 'Browse our curated chit schemes. Select the one that matches your financial goals.',
-    color: 'from-[#4F140A] to-[#4F140A]',
+    color: 'from-[#FF0000] to-[#FF0000]',
   },
   {
     number: '02',
     icon: UserPlus,
     title: 'Enroll Easily',
     desc: 'Complete simple enrollment with minimal documentation. Our team guides you through every step.',
-    color: 'from-[#4F140A] to-[#4F140A]',
+    color: 'from-[#FF0000] to-[#FF0000]',
   },
   {
     number: '03',
     icon: IndianRupee,
     title: 'Monthly Contribution',
     desc: 'Make your monthly instalment on time. Participate in monthly auctions.',
-    color: 'from-[#4F140A] to-[#4F140A]',
+    color: 'from-[#FF0000] to-[#FF0000]',
   },
   {
     number: '04',
     icon: Gift,
     title: 'Receive Chit Benefits',
     desc: 'Win the auction amount or accumulate dividends. Get full value by the end.',
-    color: 'from-[#4F140A] to-[#4F140A]',
+    color: 'from-[#FF0000] to-[#FF0000]',
   },
 ];
 
@@ -45,7 +45,7 @@ export default function HowItWorks() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
+    <section ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
       <div className="absolute inset-0 opacity-30"
         style={{
           backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(18,53,36,0.08) 0%, transparent 60%), radial-gradient(circle at 80% 50%, rgba(207,175,93,0.08) 0%, transparent 60%)',
@@ -109,6 +109,7 @@ export default function HowItWorks() {
     </section>
   );
 }
+
 
 
 

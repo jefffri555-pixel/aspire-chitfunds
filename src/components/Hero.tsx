@@ -38,12 +38,12 @@ export default function Hero() {
       ref={heroRef}
       className="relative min-h-screen flex flex-col justify-center overflow-hidden"
     >
-      <div className="absolute inset-0 bg-[#4F140A]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#4F140A]/80 via-transparent to-[#4F140A]/90" />
+      <div className="absolute inset-0 bg-[#FF0000]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#FF0000]/80 via-transparent to-[#FF0000]/90" />
 
       <div className="parallax-orb orb absolute top-1/4 right-1/4 w-80 h-80 bg-[#CFAF5D]/10 transition-transform duration-300 ease-out" />
       <div className="parallax-orb orb absolute bottom-1/3 left-1/6 w-60 h-60 bg-[#CFAF5D]/8 transition-transform duration-300 ease-out" style={{ animationDelay: '2s' }} />
-      <div className="parallax-orb orb absolute top-1/2 left-1/2 w-40 h-40 bg-[#4F140A]/60 transition-transform duration-300 ease-out" style={{ animationDelay: '4s' }} />
+      <div className="parallax-orb orb absolute top-1/2 left-1/2 w-40 h-40 bg-[#FF0000]/60 transition-transform duration-300 ease-out" style={{ animationDelay: '4s' }} />
 
       {[...Array(8)].map((_, i) => (
         <div
@@ -118,5 +118,6 @@ export default function Hero() {
     </section>
   );
 }
+
 
 
