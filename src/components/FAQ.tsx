@@ -60,7 +60,7 @@ function FAQItem({ item, open, onToggle }: { item: FAQItem; open: boolean; onTog
         className={`accordion-content ${open ? 'open' : ''}`}
         style={{ maxHeight: open ? '200px' : '0' }}
       >
-        <p className="text-[#E4C77A]/80 leading-relaxed px-4 pb-5 text-sm">{item.a}</p>
+        <p className="text-[#232323]/75 leading-relaxed px-4 pb-5 text-sm">{item.a}</p>
       </div>
     </div>
   );
@@ -80,11 +80,11 @@ export default function FAQ() {
   }, []);
 
   return (
-    <section id="faq" ref={sectionRef} className="section-padding bg-[#4F140A] relative">
+    <section id="faq" ref={sectionRef} className="section-padding bg-white relative">
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="text-center mb-12 reveal">
           <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Common Questions</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#232323] mb-5">
             Frequently Asked Questions
           </h2>
           <div className="gold-divider mb-5" />
@@ -101,7 +101,7 @@ export default function FAQ() {
           ))}
         </div>
 
-        <p className="text-center text-[#E4C77A]/60 text-sm mt-8 reveal">
+        <p className="text-center text-[#232323]/65 text-sm mt-8 reveal">
           Can't find the answer you're looking for? Contact our team at 95144 33333
         </p>
       </div>

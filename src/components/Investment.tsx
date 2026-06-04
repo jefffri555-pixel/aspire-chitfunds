@@ -37,21 +37,17 @@ export default function Investment() {
   }, []);
 
   return (
-    <section id="investment" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
-      <div className="absolute inset-0 opacity-20"
-        style={{ backgroundImage: 'radial-gradient(circle at 30% 70%, rgba(207,175,93,0.08) 0%, transparent 60%)' }}
-      />
-
+    <section id="investment" ref={sectionRef} className="section-padding bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* What is Investment */}
         <div className="mb-20 reveal">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Investment Fundamentals</p>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#232323] mb-5">
               What is Investment?
             </h2>
             <div className="gold-divider mb-5" />
-            <p className="text-[#E4C77A]/80 text-lg leading-relaxed">
+            <p className="text-[#232323]/80 text-lg leading-relaxed">
               Investment is the strategic allocation of your resources — money, time, and effort — toward assets that have the potential to grow in value. Whether through chit funds, deposits, or mutual funds, smart investing helps you build wealth, achieve financial goals, and secure your family's future.
             </p>
           </div>
@@ -65,7 +61,7 @@ export default function Investment() {
               { label: 'Financial Freedom', val: 'Independence & security' },
             ].map(({ label, val }) => (
               <div key={label} className="p-4 rounded-xl bg-white border border-[#CFAF5D]/15">
-                <p className="font-semibold text-white text-sm mb-1">{label}</p>
+                <p className="font-semibold text-[#232323] text-sm mb-1">{label}</p>
                 <p className="text-[#E4C77A]/80 text-xs">{val}</p>
               </div>
             ))}
@@ -74,16 +70,16 @@ export default function Investment() {
 
         {/* Investment Strategies */}
         <div className="mb-20 reveal">
-          <h3 className="font-serif text-3xl font-bold text-white text-center mb-12">Investment Strategies</h3>
+          <h3 className="font-serif text-3xl font-bold text-[#232323] text-center mb-12">Investment Strategies</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {strategies.map(({ name, risk, return: ret, desc }) => (
               <div key={name} className="p-6 rounded-2xl bg-white border border-[#CFAF5D]/15 premium-card">
                 <div className="flex items-start justify-between mb-3">
-                  <h4 className="font-serif text-xl font-bold text-white">{name}</h4>
-                  <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-[#CFAF5D]/10 text-[#CFAF5D]">{risk} Risk</span>
+                  <h4 className="font-serif text-xl font-bold text-[#232323]">{name}</h4>
+                  <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-[#CFAF5D]/10 text-[#4F140A]">{risk} Risk</span>
                 </div>
                 <p className="text-2xl font-bold text-[#1E4A34] mb-2">{ret}</p>
-                <p className="text-[#E4C77A]/80 text-sm">{desc}</p>
+                <p className="text-[#232323]/75 text-sm">{desc}</p>
               </div>
             ))}
           </div>
@@ -91,27 +87,27 @@ export default function Investment() {
 
         {/* Investment Options */}
         <div className="reveal">
-          <h3 className="font-serif text-3xl font-bold text-white text-center mb-12">Investment Options</h3>
+          <h3 className="font-serif text-3xl font-bold text-[#232323] text-center mb-12">Investment Options</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger mb-12">
             {investmentTypes.map(({ icon: Icon, title, desc }, i) => (
               <div key={title} className="reveal p-6 rounded-2xl bg-white border border-[#CFAF5D]/15 premium-card">
                 <div className="w-12 h-12 rounded-xl bg-[#CFAF5D]/10 flex items-center justify-center mb-4">
-                  <Icon className="text-[#CFAF5D]" size={24} />
+                  <Icon className="text-[#4F140A]" size={24} />
                 </div>
-                <h4 className="font-serif text-lg font-bold text-white mb-2">{title}</h4>
-                <p className="text-[#E4C77A]/80 text-sm">{desc}</p>
+                <h4 className="font-serif text-lg font-bold text-[#232323] mb-2">{title}</h4>
+                <p className="text-[#232323]/75 text-sm">{desc}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Benefits */}
-        <div className="reveal bg-[#4F140A] rounded-3xl px-8 py-12 text-center">
-          <h3 className="font-serif text-2xl font-bold text-white mb-8">Benefits of Smart Investing</h3>
+        <div className="reveal bg-white rounded-3xl px-8 py-12 text-center border border-[#CFAF5D]/15">
+          <h3 className="font-serif text-2xl font-bold text-[#232323] mb-8">Benefits of Smart Investing</h3>
           <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-4">
             {benefits.map((benefit) => (
               <div key={benefit} className="glass px-4 py-3 rounded-xl">
-                <p className="text-white font-semibold text-sm">{benefit}</p>
+                <p className="text-[#232323] font-semibold text-sm">{benefit}</p>
               </div>
             ))}
           </div>

@@ -45,21 +45,15 @@ export default function HowItWorks() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
-      <div className="absolute inset-0 opacity-30"
-        style={{
-          backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(18,53,36,0.08) 0%, transparent 60%), radial-gradient(circle at 80% 50%, rgba(207,175,93,0.08) 0%, transparent 60%)',
-        }}
-      />
-
+    <section ref={sectionRef} className="section-padding bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 reveal">
           <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Simple Process</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#232323] mb-5">
             How Chit Funds Work
           </h2>
           <div className="gold-divider mb-5" />
-          <p className="text-[#E4C77A]/80 text-lg max-w-2xl mx-auto">
+          <p className="text-[#232323]/80 text-lg max-w-2xl mx-auto">
             A time-tested savings mechanism made simple. Transparent, structured, and beneficial for everyone.
           </p>
         </div>
@@ -81,10 +75,10 @@ export default function HowItWorks() {
                   Step {i + 1}
                 </span>
 
-                <h3 className="font-serif text-xl font-bold text-white mb-3 group-hover:text-[#E4C77A]">
+                <h3 className="font-serif text-xl font-bold text-[#232323] mb-3 group-hover:text-[#4F140A]">
                   {title}
                 </h3>
-                <p className="text-[#E4C77A]/80 text-sm leading-relaxed">{desc}</p>
+                <p className="text-[#232323]/75 text-sm leading-relaxed">{desc}</p>
               </div>
 
               {i < steps.length - 1 && (

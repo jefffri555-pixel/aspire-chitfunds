@@ -117,7 +117,7 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
         <div className="grid grid-cols-2 gap-3 mb-5">
           <div className="bg-[#F7F2E8] rounded-lg p-3 text-center">
             <p className="text-[#232323] font-bold text-lg">₹{fmt(scheme.monthly)}</p>
-            <p className="text-white/70 text-xs">Monthly</p>
+            <p className="text-[#232323]/70 text-xs">Monthly</p>
           </div>
           <div className="bg-[#F7F2E8] rounded-lg p-3 text-center">
             <p className="text-[#232323] font-bold text-lg">{scheme.months}</p>
@@ -191,19 +191,15 @@ export default function ChitSchemes() {
   }, []);
 
   return (
-    <section id="schemes" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
-      <div className="absolute inset-0 opacity-40"
-        style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(207,175,93,0.06) 0%, transparent 70%)' }}
-      />
-
+    <section id="schemes" ref={sectionRef} className="section-padding bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 reveal">
           <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Offerings</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#232323] mb-5">
             Chit Schemes
           </h2>
           <div className="gold-divider mb-5" />
-          <p className="text-[#E4C77A]/80 text-lg max-w-2xl mx-auto">
+          <p className="text-[#232323]/80 text-lg max-w-2xl mx-auto">
             Choose the scheme that fits your financial goals. All plans include dividend returns and flexible access.
           </p>
         </div>
