@@ -13,7 +13,7 @@ export default function CTA() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 bg-[#FF0000] relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 bg-[#4F140A] relative overflow-hidden">
       <div className="absolute inset-0 opacity-30"
         style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(207,175,93,0.1) 0%, transparent 70%)' }}
       />
@@ -43,4 +43,5 @@ export default function CTA() {
     </section>
   );
 }
+
 

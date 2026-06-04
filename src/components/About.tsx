@@ -30,7 +30,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
+    <section id="about" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#CFAF5D]/5 rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#123524]/5 rounded-full translate-y-1/2 -translate-x-1/2" />
 
@@ -64,7 +64,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="absolute -top-6 -right-6 bg-[#FF0000] px-5 py-4 rounded-xl shadow-gold text-center">
+            <div className="absolute -top-6 -right-6 bg-[#4F140A] px-5 py-4 rounded-xl shadow-gold text-center">
               <p className="text-[#CFAF5D] font-serif text-2xl font-bold">2026</p>
               <p className="text-white text-xs mt-0.5">Established</p>
             </div>
@@ -102,7 +102,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-3 bg-[#FF0000] px-5 py-3 rounded-full">
+            <div className="inline-flex items-center gap-3 bg-[#4F140A] px-5 py-3 rounded-full">
               <div className="w-2 h-2 rounded-full bg-[#CFAF5D] animate-pulse" />
               <span className="text-white text-sm font-medium">CIN: U64199TZ2026PTC039013</span>
             </div>
@@ -127,5 +127,6 @@ export default function About() {
     </section>
   );
 }
+
 
 

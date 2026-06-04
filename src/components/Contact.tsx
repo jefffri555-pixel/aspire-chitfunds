@@ -62,7 +62,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
+    <section id="contact" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
       <div className="absolute inset-0 opacity-20"
         style={{ backgroundImage: 'radial-gradient(circle at 30% 70%, rgba(207,175,93,0.08) 0%, transparent 60%)' }}
       />
@@ -91,7 +91,7 @@ export default function Contact() {
                   className="group block p-5 rounded-2xl bg-white border border-[#CFAF5D]/15 hover:border-[#CFAF5D]/40 hover:shadow-gold transition-all duration-300"
                 >
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF0000]/10 to-[#FF0000]/5 flex items-center justify-center flex-shrink-0 group-hover:from-[#FF0000]/20 group-hover:to-[#FF0000]/10 transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4F140A]/10 to-[#4F140A]/5 flex items-center justify-center flex-shrink-0 group-hover:from-[#4F140A]/20 group-hover:to-[#4F140A]/10 transition-all duration-300">
                       <Icon className="text-[#CFAF5D]" size={22} />
                     </div>
                     <div className="min-w-0 flex-1">
@@ -136,7 +136,7 @@ export default function Contact() {
                 )}
 
                 {error && (
-                  <div className="p-4 rounded-xl bg-[#FF0000]/40 border border-[#CFAF5D]/20">
+                  <div className="p-4 rounded-xl bg-[#4F140A]/40 border border-[#CFAF5D]/20">
                     <p className="text-[#E4C77A] text-sm font-medium">{error}</p>
                   </div>
                 )}
@@ -230,7 +230,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading || submitted}
-                  className="w-full h-14 mt-6 bg-gradient-to-r from-[#FF0000] to-[#CFAF5D] hover:from-[#FF0000]/90 hover:to-[#E4C77A] disabled:opacity-70 disabled:cursor-not-allowed text-white font-bold text-base rounded-xl transition-all duration-300 hover:shadow-gold flex items-center justify-center gap-2 group relative overflow-hidden"
+                  className="w-full h-14 mt-6 bg-gradient-to-r from-[#4F140A] to-[#CFAF5D] hover:from-[#4F140A]/90 hover:to-[#E4C77A] disabled:opacity-70 disabled:cursor-not-allowed text-white font-bold text-base rounded-xl transition-all duration-300 hover:shadow-gold flex items-center justify-center gap-2 group relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-[#E4C77A]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   {loading ? (
@@ -263,5 +263,6 @@ export default function Contact() {
     </section>
   );
 }
+
 
 
