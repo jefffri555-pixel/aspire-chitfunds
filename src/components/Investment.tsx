@@ -37,7 +37,7 @@ export default function Investment() {
   }, []);
 
   return (
-    <section id="investment" ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
+    <section id="investment" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
       <div className="absolute inset-0 opacity-20"
         style={{ backgroundImage: 'radial-gradient(circle at 30% 70%, rgba(207,175,93,0.08) 0%, transparent 60%)' }}
       />
@@ -106,7 +106,7 @@ export default function Investment() {
         </div>
 
         {/* Benefits */}
-        <div className="reveal bg-[#FF0000] rounded-3xl px-8 py-12 text-center">
+        <div className="reveal bg-[#4F140A] rounded-3xl px-8 py-12 text-center">
           <h3 className="font-serif text-2xl font-bold text-white mb-8">Benefits of Smart Investing</h3>
           <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-4">
             {benefits.map((benefit) => (
@@ -120,6 +120,7 @@ export default function Investment() {
     </section>
   );
 }
+
 
 
 

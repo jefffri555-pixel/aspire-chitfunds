@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FF0000] overflow-x-hidden">
+    <div className="min-h-screen bg-[#4F140A] overflow-x-hidden">
       {/* Luxury Cursor */}
       <div
         className="cursor-dot"
@@ -60,6 +60,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

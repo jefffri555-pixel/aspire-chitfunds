@@ -200,7 +200,7 @@ body {
 
 .premium-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(255, 0, 0, 0.2);
+  box-shadow: 0 20px 60px rgba(79, 20, 10, 0.2);
 }
 
 /* Nav link */
@@ -279,7 +279,7 @@ body {
 }
 
 .scheme-table tr:nth-child(even) td {
-  background: rgba(255, 0, 0, 0.04);
+  background: rgba(79, 20, 10, 0.04);
 }
 
 /* Section padding */
@@ -302,5 +302,6 @@ body {
 
 .testimonial-card:hover {
   border-color: rgba(207, 175, 93, 0.4);
-  box-shadow: 0 12px 40px rgba(255, 0, 0, 0.1);
+  box-shadow: 0 12px 40px rgba(79, 20, 10, 0.1);
 }
+
