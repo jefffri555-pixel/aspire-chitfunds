@@ -76,7 +76,7 @@ export default function Investment() {
               <div key={name} className="p-6 rounded-2xl bg-white border border-[#CFAF5D]/15 premium-card">
                 <div className="flex items-start justify-between mb-3">
                   <h4 className="font-serif text-xl font-bold text-[#232323]">{name}</h4>
-                  <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-[#CFAF5D]/10 text-[#388087]">{risk} Risk</span>
+                  <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-[#CFAF5D]/10 text-[#082340]">{risk} Risk</span>
                 </div>
                 <p className="text-2xl font-bold text-[#1E4A34] mb-2">{ret}</p>
                 <p className="text-[#232323]/75 text-sm">{desc}</p>
@@ -92,7 +92,7 @@ export default function Investment() {
             {investmentTypes.map(({ icon: Icon, title, desc }, i) => (
               <div key={title} className="reveal p-6 rounded-2xl bg-white border border-[#CFAF5D]/15 premium-card">
                 <div className="w-12 h-12 rounded-xl bg-[#CFAF5D]/10 flex items-center justify-center mb-4">
-                  <Icon className="text-[#388087]" size={24} />
+                  <Icon className="text-[#082340]" size={24} />
                 </div>
                 <h4 className="font-serif text-lg font-bold text-[#232323] mb-2">{title}</h4>
                 <p className="text-[#232323]/75 text-sm">{desc}</p>
@@ -116,6 +116,7 @@ export default function Investment() {
     </section>
   );
 }
+
 
 
 

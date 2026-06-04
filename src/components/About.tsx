@@ -64,7 +64,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="absolute -top-6 -right-6 bg-[#388087] px-5 py-4 rounded-xl shadow-gold text-center">
+            <div className="absolute -top-6 -right-6 bg-[#082340] px-5 py-4 rounded-xl shadow-gold text-center">
               <p className="text-[#CFAF5D] font-serif text-2xl font-bold">2026</p>
               <p className="text-white text-xs mt-0.5">Established</p>
             </div>
@@ -102,7 +102,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-3 bg-[#388087] px-5 py-3 rounded-full">
+            <div className="inline-flex items-center gap-3 bg-[#082340] px-5 py-3 rounded-full">
               <div className="w-2 h-2 rounded-full bg-[#CFAF5D] animate-pulse" />
               <span className="text-white text-sm font-medium">CIN: U64199TZ2026PTC039013</span>
             </div>
@@ -127,5 +127,6 @@ export default function About() {
     </section>
   );
 }
+
 
 

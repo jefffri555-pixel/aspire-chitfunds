@@ -95,7 +95,7 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
         ? 'border-[#CFAF5D] shadow-gold-lg scale-[1.02]'
         : 'border-[#CFAF5D]/20 bg-white shadow-sm hover:border-[#CFAF5D]/40'
     }`}>
-      <div className={`relative px-7 py-6 ${isGold ? 'bg-gradient-to-br from-[#388087] via-[#388087] to-[#388087]' : 'bg-[#388087]'}`}>
+      <div className={`relative px-7 py-6 ${isGold ? 'bg-gradient-to-br from-[#082340] via-[#082340] to-[#082340]' : 'bg-[#082340]'}`}>
         {isGold && (
           <div className="absolute top-4 right-4 bg-[#CFAF5D] text-white text-xs font-bold px-3 py-1 rounded-full tracking-wide">
             MOST POPULAR
@@ -166,7 +166,7 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
           className={`flex items-center justify-center gap-2 w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 ${
             isGold
               ? 'btn-gold'
-              : 'border border-[#CFAF5D] text-white hover:bg-[#CFAF5D] hover:text-[#388087]'
+              : 'border border-[#CFAF5D] text-white hover:bg-[#CFAF5D] hover:text-[#082340]'
           }`}
         >
           <Phone size={15} />
@@ -222,6 +222,7 @@ export default function ChitSchemes() {
     </section>
   );
 }
+
 
 
 

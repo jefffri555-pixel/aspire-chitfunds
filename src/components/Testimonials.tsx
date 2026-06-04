@@ -38,7 +38,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-padding bg-[#388087] relative overflow-hidden">
+    <section ref={sectionRef} className="section-padding bg-[#082340] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#CFAF5D]/5 rounded-full -translate-y-1/2 translate-x-1/2" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -80,6 +80,7 @@ export default function Testimonials() {
     </section>
   );
 }
+
 
 
 
