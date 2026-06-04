@@ -59,8 +59,8 @@ export default function Hero() {
       ))}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-20">
-        <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 animate-fade-up">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 animate-fade-up mx-auto">
             <div className="w-2 h-2 rounded-full bg-[#CFAF5D] animate-pulse" />
             <span className="text-[#E4C77A] text-sm font-medium tracking-wide">
               CIN: U64199TZ2026PTC039013
@@ -71,17 +71,17 @@ export default function Hero() {
             நம்பிக்கையான சேமிப்பு · ஒளிவான குடும்ப எதிர்காலம்
           </p>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white animate-fade-up text-center" style={{ animationDelay: '0.2s' }}>
             Secure Savings.<br />
             <span className="text-gold-gradient">Stronger Futures.</span>
           </h1>
 
-          <p className="text-[#FAFAF8]/75 text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-10 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          <p className="text-[#FAFAF8]/75 text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-10 animate-fade-up mx-auto text-center" style={{ animationDelay: '0.3s' }}>
             A trusted partner for disciplined savings, financial growth, and future planning.
             Building wealth for families across Tamil Nadu with transparency and integrity.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+          <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-up justify-center items-center mx-auto" style={{ animationDelay: '0.4s' }}>
             <button
               onClick={() => document.getElementById('schemes')?.scrollIntoView({ behavior: 'smooth' })}
               className="btn-gold px-8 py-4 rounded-full text-base font-semibold"
@@ -98,7 +98,7 @@ export default function Hero() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-fade-up" style={{ animationDelay: '0.5s' }}>
             {stats.map(({ icon: Icon, label, sub }) => (
-              <div key={label} className="glass px-4 py-4 rounded-xl group hover:border-[#CFAF5D]/40 transition-all duration-300">
+              <div key={label} className="glass px-4 py-4 rounded-xl group hover:border-[#CFAF5D]/40 transition-all duration-300 text-center">
                 <Icon size={22} className="text-[#CFAF5D] mb-2 group-hover:scale-110 transition-transform" />
                 <p className="text-white text-sm font-semibold leading-tight">{label}</p>
                 <p className="text-[#CFAF5D]/70 text-xs mt-0.5">{sub}</p>
