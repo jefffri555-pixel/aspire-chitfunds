@@ -93,9 +93,9 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
     <div className={`rounded-2xl overflow-hidden border transition-all duration-400 premium-card ${
       isGold
         ? 'border-[#CFAF5D] shadow-gold-lg scale-[1.02]'
-        : 'border-[#CFAF5D]/20 bg-[#2B0F0B] shadow-sm hover:border-[#CFAF5D]/40'
+        : 'border-[#CFAF5D]/20 bg-white shadow-sm hover:border-[#CFAF5D]/40'
     }`}>
-      <div className={`relative px-7 py-6 ${isGold ? 'bg-gradient-to-br from-[#4F140A] via-[#4F140A] to-[#4F140A]' : 'bg-[#4F140A]'}`}>
+      <div className={`relative px-7 py-6 ${isGold ? 'bg-gradient-to-br from-[#FF0000] via-[#FF0000] to-[#FF0000]' : 'bg-[#FF0000]'}`}>
         {isGold && (
           <div className="absolute top-4 right-4 bg-[#CFAF5D] text-white text-xs font-bold px-3 py-1 rounded-full tracking-wide">
             MOST POPULAR
@@ -113,14 +113,14 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
         </div>
       </div>
 
-      <div className="px-7 py-5 bg-[#2B0F0B]">
+      <div className="px-7 py-5 bg-white">
         <div className="grid grid-cols-2 gap-3 mb-5">
-          <div className="bg-[#35160f] rounded-lg p-3 text-center">
-            <p className="text-[#F8EEE9] font-bold text-lg">₹{fmt(scheme.monthly)}</p>
+          <div className="bg-[#F7F2E8] rounded-lg p-3 text-center">
+            <p className="text-[#232323] font-bold text-lg">₹{fmt(scheme.monthly)}</p>
             <p className="text-white/70 text-xs">Monthly</p>
           </div>
-          <div className="bg-[#35160f] rounded-lg p-3 text-center">
-            <p className="text-[#F8EEE9] font-bold text-lg">{scheme.months}</p>
+          <div className="bg-[#F7F2E8] rounded-lg p-3 text-center">
+            <p className="text-[#232323] font-bold text-lg">{scheme.months}</p>
             <p className="text-[#E4C77A]/80 text-xs">Months</p>
           </div>
         </div>
@@ -148,11 +148,11 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
               <tbody>
                 {scheme.rows.map((row) => (
                   <tr key={row.month}>
-                    <td className="font-semibold text-[#F8EEE9]">{row.month}</td>
+                    <td className="font-semibold text-[#232323]">{row.month}</td>
                     <td>₹{fmt(row.instalment)}</td>
                     <td className="text-[#CFAF5D] font-medium">₹{fmt(row.dividend)}</td>
                     <td className="text-[#1E4A34] font-medium">₹{fmt(row.prize)}</td>
-                    <td className="font-semibold text-[#F8EEE9]">₹{fmt(row.total)}</td>
+                    <td className="font-semibold text-[#232323]">₹{fmt(row.total)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -166,7 +166,7 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
           className={`flex items-center justify-center gap-2 w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 ${
             isGold
               ? 'btn-gold'
-              : 'border border-[#CFAF5D] text-white hover:bg-[#CFAF5D] hover:text-[#4F140A]'
+              : 'border border-[#CFAF5D] text-white hover:bg-[#CFAF5D] hover:text-[#FF0000]'
           }`}
         >
           <Phone size={15} />
@@ -191,7 +191,7 @@ export default function ChitSchemes() {
   }, []);
 
   return (
-    <section id="schemes" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
+    <section id="schemes" ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
       <div className="absolute inset-0 opacity-40"
         style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(207,175,93,0.06) 0%, transparent 70%)' }}
       />
@@ -226,3 +226,5 @@ export default function ChitSchemes() {
     </section>
   );
 }
+
+

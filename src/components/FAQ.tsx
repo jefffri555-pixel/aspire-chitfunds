@@ -48,7 +48,7 @@ function FAQItem({ item, open, onToggle }: { item: FAQItem; open: boolean; onTog
         onClick={onToggle}
         className="w-full py-5 flex items-start justify-between hover:bg-[#CFAF5D]/10 transition-colors px-4 -mx-4"
       >
-        <span className="font-semibold text-[#F8EEE9] text-left">{item.q}</span>
+        <span className="font-semibold text-[#232323] text-left">{item.q}</span>
         <ChevronDown
           size={20}
           className={`text-[#CFAF5D] flex-shrink-0 ml-3 transition-transform duration-300 ${
@@ -80,7 +80,7 @@ export default function FAQ() {
   }, []);
 
   return (
-    <section id="faq" ref={sectionRef} className="section-padding bg-[#4F140A] relative">
+    <section id="faq" ref={sectionRef} className="section-padding bg-[#FF0000] relative">
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="text-center mb-12 reveal">
           <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Common Questions</p>
@@ -90,7 +90,7 @@ export default function FAQ() {
           <div className="gold-divider mb-5" />
         </div>
 
-        <div className="reveal bg-[#2B0F0B] rounded-2xl border border-[#CFAF5D]/20 overflow-hidden shadow-sm">
+        <div className="reveal bg-white rounded-2xl border border-[#CFAF5D]/20 overflow-hidden shadow-sm">
           {faqs.map((item, i) => (
             <FAQItem
               key={i}
@@ -108,3 +108,5 @@ export default function FAQ() {
     </section>
   );
 }
+
+

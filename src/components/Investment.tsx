@@ -37,7 +37,7 @@ export default function Investment() {
   }, []);
 
   return (
-    <section id="investment" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
+    <section id="investment" ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
       <div className="absolute inset-0 opacity-20"
         style={{ backgroundImage: 'radial-gradient(circle at 30% 70%, rgba(207,175,93,0.08) 0%, transparent 60%)' }}
       />
@@ -64,7 +64,7 @@ export default function Investment() {
               { label: 'Long-Term Growth', val: 'Compound returns' },
               { label: 'Financial Freedom', val: 'Independence & security' },
             ].map(({ label, val }) => (
-              <div key={label} className="p-4 rounded-xl bg-[#2B0F0B] border border-[#CFAF5D]/15">
+              <div key={label} className="p-4 rounded-xl bg-white border border-[#CFAF5D]/15">
                 <p className="font-semibold text-white text-sm mb-1">{label}</p>
                 <p className="text-[#E4C77A]/80 text-xs">{val}</p>
               </div>
@@ -77,7 +77,7 @@ export default function Investment() {
           <h3 className="font-serif text-3xl font-bold text-white text-center mb-12">Investment Strategies</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {strategies.map(({ name, risk, return: ret, desc }) => (
-              <div key={name} className="p-6 rounded-2xl bg-[#2B0F0B] border border-[#CFAF5D]/15 premium-card">
+              <div key={name} className="p-6 rounded-2xl bg-white border border-[#CFAF5D]/15 premium-card">
                 <div className="flex items-start justify-between mb-3">
                   <h4 className="font-serif text-xl font-bold text-white">{name}</h4>
                   <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-[#CFAF5D]/10 text-[#CFAF5D]">{risk} Risk</span>
@@ -94,7 +94,7 @@ export default function Investment() {
           <h3 className="font-serif text-3xl font-bold text-white text-center mb-12">Investment Options</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger mb-12">
             {investmentTypes.map(({ icon: Icon, title, desc }, i) => (
-              <div key={title} className="reveal p-6 rounded-2xl bg-[#2B0F0B] border border-[#CFAF5D]/15 premium-card">
+              <div key={title} className="reveal p-6 rounded-2xl bg-white border border-[#CFAF5D]/15 premium-card">
                 <div className="w-12 h-12 rounded-xl bg-[#CFAF5D]/10 flex items-center justify-center mb-4">
                   <Icon className="text-[#CFAF5D]" size={24} />
                 </div>
@@ -106,7 +106,7 @@ export default function Investment() {
         </div>
 
         {/* Benefits */}
-        <div className="reveal bg-[#4F140A] rounded-3xl px-8 py-12 text-center">
+        <div className="reveal bg-[#FF0000] rounded-3xl px-8 py-12 text-center">
           <h3 className="font-serif text-2xl font-bold text-white mb-8">Benefits of Smart Investing</h3>
           <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-4">
             {benefits.map((benefit) => (
@@ -120,3 +120,5 @@ export default function Investment() {
     </section>
   );
 }
+
+

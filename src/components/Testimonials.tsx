@@ -38,7 +38,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
+    <section ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#CFAF5D]/5 rounded-full -translate-y-1/2 translate-x-1/2" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -55,7 +55,7 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-6 stagger">
           {testimonials.map(({ name, role, rating, quote }, i) => (
-            <div key={i} className="reveal testimonial-card p-8 rounded-2xl bg-[#2B0F0B]">
+            <div key={i} className="reveal testimonial-card p-8 rounded-2xl bg-white">
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {[...Array(rating)].map((_, j) => (
@@ -64,7 +64,7 @@ export default function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="text-[#F8EEE9] leading-relaxed mb-6 font-light text-sm">
+              <p className="text-[#232323] leading-relaxed mb-6 font-light text-sm">
                 "{quote}"
               </p>
 
@@ -80,3 +80,5 @@ export default function Testimonials() {
     </section>
   );
 }
+
+

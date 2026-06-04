@@ -30,7 +30,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
+    <section id="about" ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#CFAF5D]/5 rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#123524]/5 rounded-full translate-y-1/2 -translate-x-1/2" />
 
@@ -64,7 +64,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="absolute -top-6 -right-6 bg-[#4F140A] px-5 py-4 rounded-xl shadow-gold text-center">
+            <div className="absolute -top-6 -right-6 bg-[#FF0000] px-5 py-4 rounded-xl shadow-gold text-center">
               <p className="text-[#CFAF5D] font-serif text-2xl font-bold">2026</p>
               <p className="text-white text-xs mt-0.5">Established</p>
             </div>
@@ -102,7 +102,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-3 bg-[#4F140A] px-5 py-3 rounded-full">
+            <div className="inline-flex items-center gap-3 bg-[#FF0000] px-5 py-3 rounded-full">
               <div className="w-2 h-2 rounded-full bg-[#CFAF5D] animate-pulse" />
               <span className="text-white text-sm font-medium">CIN: U64199TZ2026PTC039013</span>
             </div>
@@ -113,7 +113,7 @@ export default function About() {
           <h3 className="font-serif text-2xl font-bold text-white text-center mb-10">Our Core Values</h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 stagger">
             {values.map(({ icon: Icon, label, desc }) => (
-              <div key={label} className="reveal text-center p-5 rounded-xl bg-[#2B0F0B] border border-[#CFAF5D]/15 premium-card shadow-sm">
+              <div key={label} className="reveal text-center p-5 rounded-xl bg-white border border-[#CFAF5D]/15 premium-card shadow-sm">
                 <div className="w-12 h-12 rounded-full bg-[#CFAF5D]/10 flex items-center justify-center mx-auto mb-3">
                   <Icon size={22} className="text-[#CFAF5D]" />
                 </div>
@@ -127,3 +127,5 @@ export default function About() {
     </section>
   );
 }
+
+

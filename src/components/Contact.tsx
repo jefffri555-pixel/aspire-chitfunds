@@ -62,7 +62,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
+    <section id="contact" ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
       <div className="absolute inset-0 opacity-20"
         style={{ backgroundImage: 'radial-gradient(circle at 30% 70%, rgba(207,175,93,0.08) 0%, transparent 60%)' }}
       />
@@ -88,10 +88,10 @@ export default function Contact() {
                 <a
                   key={i}
                   href={href}
-                  className="group block p-5 rounded-2xl bg-[#2B0F0B] border border-[#CFAF5D]/15 hover:border-[#CFAF5D]/40 hover:shadow-gold transition-all duration-300"
+                  className="group block p-5 rounded-2xl bg-white border border-[#CFAF5D]/15 hover:border-[#CFAF5D]/40 hover:shadow-gold transition-all duration-300"
                 >
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4F140A]/10 to-[#4F140A]/5 flex items-center justify-center flex-shrink-0 group-hover:from-[#4F140A]/20 group-hover:to-[#4F140A]/10 transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF0000]/10 to-[#FF0000]/5 flex items-center justify-center flex-shrink-0 group-hover:from-[#FF0000]/20 group-hover:to-[#FF0000]/10 transition-all duration-300">
                       <Icon className="text-[#CFAF5D]" size={22} />
                     </div>
                     <div className="min-w-0 flex-1">
@@ -120,13 +120,13 @@ export default function Contact() {
 
           {/* Right Column - Callback Form */}
           <div className="reveal-right">
-            <div className="bg-[#2B0F0B] rounded-3xl p-8 md:p-10 shadow-lg border border-[#CFAF5D]/15">
+            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg border border-[#CFAF5D]/15">
               <h3 className="font-serif text-2xl font-bold text-white mb-2">Request a Free Consultation</h3>
               <p className="text-[#E4C77A]/80 text-sm mb-8">Our team will call you back within 24 hours.</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 {submitted && (
-                  <div className="p-4 rounded-xl bg-[#2B0F0B] border border-[#CFAF5D]/20 flex gap-3 items-start">
+                  <div className="p-4 rounded-xl bg-white border border-[#CFAF5D]/20 flex gap-3 items-start">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-0.5" size={20} />
                     <div>
                       <p className="font-semibold text-green-900 text-sm">Request Submitted!</p>
@@ -136,7 +136,7 @@ export default function Contact() {
                 )}
 
                 {error && (
-                  <div className="p-4 rounded-xl bg-[#4F140A]/40 border border-[#CFAF5D]/20">
+                  <div className="p-4 rounded-xl bg-[#FF0000]/40 border border-[#CFAF5D]/20">
                     <p className="text-[#E4C77A] text-sm font-medium">{error}</p>
                   </div>
                 )}
@@ -144,25 +144,25 @@ export default function Contact() {
                 {/* Name & Mobile Row */}
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-semibold text-[#F8EEE9] mb-2 tracking-wide">Full Name *</label>
+                    <label className="block text-xs font-semibold text-[#232323] mb-2 tracking-wide">Full Name *</label>
                     <input
                       type="text"
                       placeholder="Your full name"
                       required
                       disabled={loading}
-                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-[#2B0F0B] text-[#F8EEE9] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#35160f] transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-[#F8EEE9] mb-2 tracking-wide">Mobile Number *</label>
+                    <label className="block text-xs font-semibold text-[#232323] mb-2 tracking-wide">Mobile Number *</label>
                     <input
                       type="tel"
                       placeholder="+91 95144 33333"
                       required
                       disabled={loading}
-                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-[#2B0F0B] text-[#F8EEE9] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#35160f] transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
                       value={formData.mobile}
                       onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
                     />
@@ -172,23 +172,23 @@ export default function Contact() {
                 {/* Email & City Row */}
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-semibold text-[#F8EEE9] mb-2 tracking-wide">Email Address</label>
+                    <label className="block text-xs font-semibold text-[#232323] mb-2 tracking-wide">Email Address</label>
                     <input
                       type="email"
                       placeholder="your@email.com"
                       disabled={loading}
-                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-[#2B0F0B] text-[#F8EEE9] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#35160f] transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-[#F8EEE9] mb-2 tracking-wide">City</label>
+                    <label className="block text-xs font-semibold text-[#232323] mb-2 tracking-wide">City</label>
                     <input
                       type="text"
                       placeholder="Your city"
                       disabled={loading}
-                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-[#2B0F0B] text-[#F8EEE9] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#35160f] transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
                       value={formData.city}
                       onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                     />
@@ -197,10 +197,10 @@ export default function Contact() {
 
                 {/* Preferred Scheme Dropdown */}
                 <div>
-                  <label className="block text-xs font-semibold text-[#F8EEE9] mb-2 tracking-wide">Preferred Chit Scheme</label>
+                  <label className="block text-xs font-semibold text-[#232323] mb-2 tracking-wide">Preferred Chit Scheme</label>
                   <select
                     disabled={loading}
-                    className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-[#2B0F0B] text-[#F8EEE9] focus:outline-none focus:border-[#CFAF5D] focus:bg-[#35160f] transition-all duration-300 disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
                     value={formData.scheme}
                     onChange={(e) => setFormData({ ...formData, scheme: e.target.value })}
                   >
@@ -215,12 +215,12 @@ export default function Contact() {
 
                 {/* Message - Savings Goal */}
                 <div>
-                  <label className="block text-xs font-semibold text-[#F8EEE9] mb-2 tracking-wide">Your Savings Goal & Message</label>
+                  <label className="block text-xs font-semibold text-[#232323] mb-2 tracking-wide">Your Savings Goal & Message</label>
                   <textarea
                     placeholder="Tell us about your financial goals and savings needs..."
                     rows={4}
                     disabled={loading}
-                    className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-[#2B0F0B] text-[#F8EEE9] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#35160f] transition-all duration-300 resize-none disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 resize-none disabled:opacity-50"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
@@ -230,7 +230,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading || submitted}
-                  className="w-full h-14 mt-6 bg-gradient-to-r from-[#4F140A] to-[#CFAF5D] hover:from-[#4F140A]/90 hover:to-[#E4C77A] disabled:opacity-70 disabled:cursor-not-allowed text-white font-bold text-base rounded-xl transition-all duration-300 hover:shadow-gold flex items-center justify-center gap-2 group relative overflow-hidden"
+                  className="w-full h-14 mt-6 bg-gradient-to-r from-[#FF0000] to-[#CFAF5D] hover:from-[#FF0000]/90 hover:to-[#E4C77A] disabled:opacity-70 disabled:cursor-not-allowed text-white font-bold text-base rounded-xl transition-all duration-300 hover:shadow-gold flex items-center justify-center gap-2 group relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-[#E4C77A]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   {loading ? (
@@ -263,3 +263,5 @@ export default function Contact() {
     </section>
   );
 }
+
+
