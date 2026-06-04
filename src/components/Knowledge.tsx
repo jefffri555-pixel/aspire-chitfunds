@@ -71,7 +71,7 @@ export default function Knowledge() {
   }, []);
 
   return (
-    <section id="knowledge" ref={sectionRef} className="section-padding bg-[#FF0000] relative overflow-hidden">
+    <section id="knowledge" ref={sectionRef} className="section-padding bg-[#4F140A] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10"
         style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #CFAF5D 0, #CFAF5D 1px, transparent 0, transparent 50%)',
@@ -93,7 +93,7 @@ export default function Knowledge() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 stagger">
           {articles.map(({ icon: Icon, title, topics, desc }, i) => (
-            <div key={i} className="reveal group p-6 rounded-2xl bg-white/5 border border-[#CFAF5D]/15 hover:bg-white/8 hover:border-[#CFAF5D]/35 transition-all duration-400 premium-card">
+            <div key={i} className="reveal group p-6 rounded-2xl bg-[#4F140A]/20 border border-[#CFAF5D]/15 hover:bg-[#4F140A]/40 hover:border-[#CFAF5D]/35 transition-all duration-400 premium-card">
               <div className="w-12 h-12 rounded-xl bg-[#CFAF5D]/15 flex items-center justify-center mb-4 group-hover:bg-[#CFAF5D]/25 transition-colors">
                 <Icon className="text-[#CFAF5D]" size={22} />
               </div>

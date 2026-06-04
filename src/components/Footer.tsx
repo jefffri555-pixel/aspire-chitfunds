@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#0A0A0A] text-white relative">
+    <footer className="bg-[#4F140A] text-white relative">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
@@ -99,7 +99,7 @@ export default function Footer() {
       {/* Scroll to top button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-[#CFAF5D] text-[#123524] flex items-center justify-center font-bold hover:scale-110 transition-transform z-50"
+        className="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-[#CFAF5D] text-white flex items-center justify-center font-bold hover:scale-110 transition-transform z-50"
       >
         ↑
       </button>

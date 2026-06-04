@@ -46,9 +46,9 @@ function FAQItem({ item, open, onToggle }: { item: FAQItem; open: boolean; onTog
     <div className="border-b border-[#CFAF5D]/20 last:border-b-0">
       <button
         onClick={onToggle}
-        className="w-full py-5 flex items-start justify-between hover:bg-white/4 transition-colors px-4 -mx-4"
+        className="w-full py-5 flex items-start justify-between hover:bg-[#CFAF5D]/10 transition-colors px-4 -mx-4"
       >
-        <span className="font-semibold text-[#123524] text-left">{item.q}</span>
+        <span className="font-semibold text-[#F8EEE9] text-left">{item.q}</span>
         <ChevronDown
           size={20}
           className={`text-[#CFAF5D] flex-shrink-0 ml-3 transition-transform duration-300 ${
@@ -60,7 +60,7 @@ function FAQItem({ item, open, onToggle }: { item: FAQItem; open: boolean; onTog
         className={`accordion-content ${open ? 'open' : ''}`}
         style={{ maxHeight: open ? '200px' : '0' }}
       >
-        <p className="text-[#232323]/70 leading-relaxed px-4 pb-5 text-sm">{item.a}</p>
+        <p className="text-[#E4C77A]/80 leading-relaxed px-4 pb-5 text-sm">{item.a}</p>
       </div>
     </div>
   );
@@ -80,17 +80,17 @@ export default function FAQ() {
   }, []);
 
   return (
-    <section id="faq" ref={sectionRef} className="section-padding bg-cream-pearl relative">
+    <section id="faq" ref={sectionRef} className="section-padding bg-[#4F140A] relative">
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="text-center mb-12 reveal">
           <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Common Questions</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#123524] mb-5">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5">
             Frequently Asked Questions
           </h2>
           <div className="gold-divider mb-5" />
         </div>
 
-        <div className="reveal bg-white rounded-2xl border border-[#CFAF5D]/20 overflow-hidden shadow-sm">
+        <div className="reveal bg-[#2B0F0B] rounded-2xl border border-[#CFAF5D]/20 overflow-hidden shadow-sm">
           {faqs.map((item, i) => (
             <FAQItem
               key={i}
@@ -101,7 +101,7 @@ export default function FAQ() {
           ))}
         </div>
 
-        <p className="text-center text-[#232323]/50 text-sm mt-8 reveal">
+        <p className="text-center text-[#E4C77A]/60 text-sm mt-8 reveal">
           Can't find the answer you're looking for? Contact our team at 95144 33333
         </p>
       </div>
