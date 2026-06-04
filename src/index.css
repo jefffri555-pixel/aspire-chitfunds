@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 :root {
-   --emerald-deep: #FF0000;
-  --emerald-medium: #FF0000;
-  --gold-rich: #CFAF5D;
-  --gold-light: #E4C77A;
-  --cream-ivory: #F7F2E8;
-  --cream-pearl: #FAFAF8;
-  --charcoal: #232323;
+   --emerald-deep: #4F140A;
+  --emerald-medium: #6B1D10;
+  --gold-rich: #D4A373;
+  --gold-light: #E6BE8A;
+  --cream-ivory: #F8EEE9;
+  --cream-pearl: #FFF8F5;
+  --charcoal: #2A1814;
 }
 
 * {
@@ -96,7 +96,7 @@ body {
 }
 
 .glass-dark {
-  background: #FF0000d9;
+  background: rgba(79, 20, 10, 1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(207, 175, 93, 0.2);
@@ -304,7 +304,3 @@ body {
   border-color: rgba(207, 175, 93, 0.4);
   box-shadow: 0 12px 40px rgba(255, 0, 0, 0.1);
 }
-
-
-
-
