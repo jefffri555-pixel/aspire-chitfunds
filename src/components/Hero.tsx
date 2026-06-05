@@ -36,7 +36,7 @@ export default function Hero() {
     <section
       id="home"
       ref={heroRef}
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden"
+      className="hero-section relative min-h-screen flex flex-col justify-center overflow-hidden"
     >
       <div className="absolute inset-0 bg-[#082340]" />
       <div className="absolute inset-0 bg-gradient-to-b from-[#082340]/80 via-transparent to-[#082340]/90" />
@@ -58,7 +58,7 @@ export default function Hero() {
         />
       ))}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-20">
+      <div className="relative z-10 hero-content max-w-7xl mx-auto px-6 pt-28 pb-20">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 animate-fade-up mx-auto">
             <div className="w-2 h-2 rounded-full bg-[#CFAF5D] animate-pulse" />
@@ -67,7 +67,7 @@ export default function Hero() {
             </span>
           </div>
 
-          <p className="text-[#CFAF5D]/80 text-base font-medium tracking-widest uppercase mb-4 font-serif italic animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          <p className="text-[#CFAF5D]/90 text-base font-semibold tracking-[0.5px] uppercase mb-4 font-serif italic animate-fade-up" style={{ animationDelay: '0.1s' }}>
             நம்பிக்கையான சேமிப்பு · ஒளிவான குடும்ப எதிர்காலம்
           </p>
 

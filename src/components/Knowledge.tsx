@@ -78,6 +78,7 @@ export default function Knowledge() {
           backgroundSize: '20px 20px',
         }}
       />
+      <div className="network-pattern absolute inset-0 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 reveal">

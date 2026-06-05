@@ -17,6 +17,7 @@ export default function CTA() {
       <div className="absolute inset-0 opacity-30"
         style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(207,175,93,0.1) 0%, transparent 70%)' }}
       />
+      <div className="network-pattern absolute inset-0 pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5 reveal">
