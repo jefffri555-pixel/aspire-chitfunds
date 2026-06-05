@@ -42,7 +42,7 @@ export default function Investment() {
         {/* What is Investment */}
         <div className="mb-20 reveal">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Investment Fundamentals</p>
+            <p className="text-[#082340] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Investment Fundamentals</p>
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#232323] mb-5">
               What is Investment?
             </h2>
@@ -62,7 +62,7 @@ export default function Investment() {
             ].map(({ label, val }) => (
               <div key={label} className="p-4 rounded-xl bg-white border border-[#CFAF5D]/15">
                 <p className="font-semibold text-[#232323] text-sm mb-1">{label}</p>
-                <p className="text-[#E4C77A]/80 text-xs">{val}</p>
+                <p className="text-[#082340]/80 text-xs">{val}</p>
               </div>
             ))}
           </div>

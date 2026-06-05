@@ -9,6 +9,7 @@ import Knowledge from './components/Knowledge';
 import Investment from './components/Investment';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
+import MissionValues from './components/MissionValues';
 import Contact from './components/Contact';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
@@ -52,6 +53,7 @@ function App() {
       <Investment />
       <Testimonials />
       <FAQ />
+      <MissionValues />
       <Contact />
       <CTA />
       <Footer />

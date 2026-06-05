@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ArrowDown, Shield, Eye, Users, TrendingUp } from 'lucide-react';
+import { Shield, Eye, Users, TrendingUp } from 'lucide-react';
 
 const stats = [
   { icon: Shield, label: 'Registered Company', sub: 'Govt. of India' },
@@ -27,10 +27,6 @@ export default function Hero() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
-
-  const scrollToNext = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section
@@ -107,14 +103,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      <button
-        onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#CFAF5D]/60 hover:text-[#CFAF5D] transition-colors animate-bounce"
-      >
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <ArrowDown size={16} />
-      </button>
     </section>
   );
 }

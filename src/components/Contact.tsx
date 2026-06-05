@@ -70,12 +70,12 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 reveal">
-          <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Get In Touch</p>
+          <p className="text-[#082340] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Get In Touch</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5">
             Contact Our Financial Experts
           </h2>
           <div className="gold-divider mb-5" />
-          <p className="text-[#E4C77A]/80 text-lg max-w-2xl mx-auto">
+          <p className="text-[#082340]/80 text-lg max-w-2xl mx-auto">
             Our financial experts are ready to help you choose the perfect chit scheme for your savings goals.
           </p>
         </div>
@@ -96,8 +96,8 @@ export default function Contact() {
                       <Icon className="text-[#CFAF5D]" size={22} />
                     </div>
                     <div className="min-w-0 flex-1">
-                      <p className="text-[#CFAF5D] text-xs font-bold tracking-widest uppercase">{label}</p>
-                      <p className="text-[#E4C77A] text-sm font-medium mt-0.5 leading-snug break-words group-hover:text-[#FFFFFF] transition-colors">{value}</p>
+                      <p className="text-[#082340] text-xs font-bold tracking-widest uppercase">{label}</p>
+                      <p className="text-[#082340] text-sm font-medium mt-0.5 leading-snug break-words group-hover:text-[#082340] transition-colors">{value}</p>
                     </div>
                   </div>
                 </a>
@@ -105,12 +105,14 @@ export default function Contact() {
             </div>
 
             {/* Google Map */}
-            <div className="rounded-2xl overflow-hidden shadow-lg border border-[#CFAF5D]/20 h-80 reveal-left" style={{ animationDelay: '0.2s' }}>
+            <div
+              className="rounded-3xl overflow-hidden shadow-lg border border-[#CFAF5D]/20 reveal-left"
+              style={{ animationDelay: '0.2s', position: 'relative', paddingBottom: '56.25%', height: 0 }}
+            >
               <iframe
                 title="Aspire Chit Fund Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7797447137945!2d76.96179!3d11.01667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4f7b5e7d7d7d7%3A0x7d7d7d7d7d7d7d7d!2sNew%20VOC%20Park%2C%20Coimbatore!5e0!3m2!1sen!2sin!4v1234567890"
-                width="100%"
-                height="100%"
+                src="https://maps.google.com/maps?q=New%20VOC%20Park%2C%20Coimbatore%2C%20Tamil%20Nadu%2C%20India&z=15&output=embed"
+                className="absolute inset-0 w-full h-full"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
@@ -123,7 +125,7 @@ export default function Contact() {
           <div className="reveal-right">
             <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg border border-[#CFAF5D]/15">
               <h3 className="font-serif text-2xl font-bold text-white mb-2">Request a Free Consultation</h3>
-              <p className="text-[#E4C77A]/80 text-sm mb-8">Our team will call you back within 24 hours.</p>
+              <p className="text-[#082340]/80 text-sm mb-8">Our team will call you back within 24 hours.</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 {submitted && (
@@ -138,7 +140,7 @@ export default function Contact() {
 
                 {error && (
                   <div className="p-4 rounded-xl bg-[#082340]/40 border border-[#CFAF5D]/20">
-                    <p className="text-[#E4C77A] text-sm font-medium">{error}</p>
+                    <p className="text-[#082340] text-sm font-medium">{error}</p>
                   </div>
                 )}
 
@@ -151,7 +153,7 @@ export default function Contact() {
                       placeholder="Your full name"
                       required
                       disabled={loading}
-                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#082340]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     />
@@ -163,7 +165,7 @@ export default function Contact() {
                       placeholder="+91 95144 33333"
                       required
                       disabled={loading}
-                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#082340]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
                       value={formData.mobile}
                       onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
                     />
@@ -178,7 +180,7 @@ export default function Contact() {
                       type="email"
                       placeholder="your@email.com"
                       disabled={loading}
-                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#082340]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     />
@@ -189,7 +191,7 @@ export default function Contact() {
                       type="text"
                       placeholder="Your city"
                       disabled={loading}
-                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
+                      className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#082340]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 disabled:opacity-50"
                       value={formData.city}
                       onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                     />
@@ -221,7 +223,7 @@ export default function Contact() {
                     placeholder="Tell us about your financial goals and savings needs..."
                     rows={4}
                     disabled={loading}
-                    className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#E4C77A]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 resize-none disabled:opacity-50"
+                    className="w-full px-4 py-3 rounded-xl border border-[#CFAF5D]/25 bg-white text-[#232323] placeholder-[#082340]/50 focus:outline-none focus:border-[#CFAF5D] focus:bg-[#F7F2E8] transition-all duration-300 resize-none disabled:opacity-50"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
@@ -253,7 +255,7 @@ export default function Contact() {
                   )}
                 </button>
 
-                <p className="text-xs text-[#E4C77A]/60 text-center mt-4">
+                <p className="text-xs text-[#082340]/60 text-center mt-4">
                   We respect your privacy. Your data is secure and confidential.
                 </p>
               </form>

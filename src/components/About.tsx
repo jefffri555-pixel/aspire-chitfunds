@@ -36,7 +36,7 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20 reveal">
-          <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Story</p>
+          <p className="text-[#082340] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Story</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#123524] mb-5">
             About Aspire Chit Fund
           </h2>
@@ -57,7 +57,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#123524]/70 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="glass px-5 py-4 rounded-xl">
-                  <p className="text-[#CFAF5D] font-serif italic text-lg font-semibold">
+                  <p className="text-[#082340] font-serif italic text-lg font-semibold">
                     "நம்பிக்கையான சேமிப்பு"
                   </p>
                   <p className="text-white/80 text-sm mt-1">Trusted Savings for Every Family</p>
@@ -65,7 +65,7 @@ export default function About() {
               </div>
             </div>
             <div className="absolute -top-6 -right-6 bg-[#082340] px-5 py-4 rounded-xl shadow-gold text-center">
-              <p className="text-[#CFAF5D] font-serif text-2xl font-bold">2026</p>
+              <p className="text-[#082340] font-serif text-2xl font-bold">2026</p>
               <p className="text-white text-xs mt-0.5">Established</p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function About() {
 
             <div className="space-y-4 mb-8">
               <div className="flex gap-4 p-4 rounded-xl bg-[#123524]/5 border border-[#123524]/10">
-                <Target className="text-[#CFAF5D] mt-1 flex-shrink-0" size={22} />
+                <Target className="text-[#082340] mt-1 flex-shrink-0" size={22} />
                 <div>
                   <p className="font-semibold text-[#123524] mb-1">Our Mission</p>
                   <p className="text-[#232323]/65 text-sm leading-relaxed">
@@ -92,7 +92,7 @@ export default function About() {
                 </div>
               </div>
               <div className="flex gap-4 p-4 rounded-xl bg-[#CFAF5D]/8 border border-[#CFAF5D]/20">
-                <Eye className="text-[#CFAF5D] mt-1 flex-shrink-0" size={22} />
+                <Eye className="text-[#082340] mt-1 flex-shrink-0" size={22} />
                 <div>
                   <p className="font-semibold text-[#123524] mb-1">Our Vision</p>
                   <p className="text-[#232323]/65 text-sm leading-relaxed">
@@ -103,7 +103,7 @@ export default function About() {
             </div>
 
             <div className="inline-flex items-center gap-3 bg-[#082340] px-5 py-3 rounded-full">
-              <div className="w-2 h-2 rounded-full bg-[#CFAF5D] animate-pulse" />
+              <div className="w-2 h-2 rounded-full bg-[#082340] animate-pulse" />
               <span className="text-white text-sm font-medium">CIN: U64199TZ2026PTC039013</span>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function About() {
             {values.map(({ icon: Icon, label, desc }) => (
               <div key={label} className="reveal text-center p-5 rounded-xl bg-white border border-[#CFAF5D]/15 premium-card shadow-sm">
                 <div className="w-12 h-12 rounded-full bg-[#CFAF5D]/10 flex items-center justify-center mx-auto mb-3">
-                  <Icon size={22} className="text-[#CFAF5D]" />
+                  <Icon size={22} className="text-[#082340]" />
                 </div>
                 <p className="font-semibold text-[#123524] text-sm mb-1">{label}</p>
                 <p className="text-[#232323]/55 text-xs leading-relaxed">{desc}</p>
