@@ -70,12 +70,12 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 reveal">
-          <p className="text-[#082340] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Get In Touch</p>
+          <p className="text-[#D4B16A] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Get In Touch</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5">
             Contact Our Financial Experts
           </h2>
           <div className="gold-divider mb-5" />
-          <p className="text-[#082340]/80 text-lg max-w-2xl mx-auto">
+          <p className="text-[#D4B16A]/80 text-lg max-w-2xl mx-auto">
             Our financial experts are ready to help you choose the perfect chit scheme for your savings goals.
           </p>
         </div>
@@ -124,7 +124,7 @@ export default function Contact() {
           {/* Right Column - Callback Form */}
           <div className="reveal-right">
             <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg border border-[#CFAF5D]/15">
-              <h3 className="font-serif text-2xl font-bold text-white mb-2">Request a Free Consultation</h3>
+              <h3 className="font-serif text-2xl font-bold text-[#082340] mb-2">Request a Free Consultation</h3>
               <p className="text-[#082340]/80 text-sm mb-8">Our team will call you back within 24 hours.</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">

@@ -37,7 +37,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20 reveal">
           <p className="text-[#082340] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Story</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#123524] mb-5">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#082340] mb-5">
             About Aspire Chit Fund
           </h2>
           <div className="gold-divider mb-5" />
@@ -65,13 +65,13 @@ export default function About() {
               </div>
             </div>
             <div className="absolute -top-6 -right-6 bg-[#082340] px-5 py-4 rounded-xl shadow-gold text-center">
-              <p className="text-[#082340] font-serif text-2xl font-bold">2026</p>
+              <p className="text-[#D4B16A] font-serif text-2xl font-bold">2026</p>
               <p className="text-white text-xs mt-0.5">Established</p>
             </div>
           </div>
 
           <div className="reveal-right">
-            <h3 className="font-serif text-3xl font-bold text-[#123524] mb-6">
+            <h3 className="font-serif text-3xl font-bold text-[#082340] mb-6">
               Building Trust Through Transparency
             </h3>
             <p className="text-[#232323]/70 leading-relaxed mb-6">
@@ -85,7 +85,7 @@ export default function About() {
               <div className="flex gap-4 p-4 rounded-xl bg-[#123524]/5 border border-[#123524]/10">
                 <Target className="text-[#082340] mt-1 flex-shrink-0" size={22} />
                 <div>
-                  <p className="font-semibold text-[#123524] mb-1">Our Mission</p>
+                  <p className="font-semibold text-[#082340] mb-1">Our Mission</p>
                   <p className="text-[#232323]/65 text-sm leading-relaxed">
                     Helping families build a financially secure future through structured savings.
                   </p>
@@ -94,7 +94,7 @@ export default function About() {
               <div className="flex gap-4 p-4 rounded-xl bg-[#CFAF5D]/8 border border-[#CFAF5D]/20">
                 <Eye className="text-[#082340] mt-1 flex-shrink-0" size={22} />
                 <div>
-                  <p className="font-semibold text-[#123524] mb-1">Our Vision</p>
+                  <p className="font-semibold text-[#082340] mb-1">Our Vision</p>
                   <p className="text-[#232323]/65 text-sm leading-relaxed">
                     To become the most trusted financial service provider through transparency and customer satisfaction.
                   </p>
@@ -110,7 +110,7 @@ export default function About() {
         </div>
 
         <div className="reveal">
-          <h3 className="font-serif text-2xl font-bold text-[#123524] text-center mb-10">Our Core Values</h3>
+          <h3 className="font-serif text-2xl font-bold text-[#082340] text-center mb-10">Our Core Values</h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 stagger">
             {values.map(({ icon: Icon, label, desc }) => (
               <div key={label} className="reveal text-center p-5 rounded-xl bg-white border border-[#CFAF5D]/15 premium-card shadow-sm">

@@ -48,7 +48,7 @@ export default function HowItWorks() {
     <section ref={sectionRef} className="section-padding bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 reveal">
-          <p className="text-[#CFAF5D] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Simple Process</p>
+          <p className="text-[#232323] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Simple Process</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#232323] mb-5">
             How Chit Funds Work
           </h2>

@@ -67,10 +67,10 @@ export default function Hero() {
             நம்பிக்கையான சேமிப்பு · ஒளிவான குடும்ப எதிர்காலம்
           </p>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white animate-fade-up text-center" style={{ animationDelay: '0.2s' }}>
-            Secure Savings.<br />
-            <span className="text-gold-gradient">Stronger Futures.</span>
-          </h1>
+         <h1 className="text-7xl md:text-7xl font-bold leading-tight">
+  <span className="text-[#D4B16A]">Aspire</span>
+  <span className="text-white"> Chit Funds</span>
+</h1>
 
           <p className="text-[#FAFAF8]/75 text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-10 animate-fade-up mx-auto text-center" style={{ animationDelay: '0.3s' }}>
             A trusted partner for disciplined savings, financial growth, and future planning.
