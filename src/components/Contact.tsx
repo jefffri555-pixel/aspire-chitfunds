@@ -1,6 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Globe, ArrowRight, Loader, CheckCircle } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+import { useEffect, useRef, useState } from 'react';import { Mail, Phone, MapPin, Clock, Globe, ArrowRight, Loader, CheckCircle } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', mobile: '', email: '', city: '', scheme: '', message: '' });
@@ -24,23 +22,27 @@ export default function Contact() {
     setError('');
 
     try {
-      if (!supabase) {
+      const webUrl = import.meta.env.VITE_WEB_URL;
+      if (!webUrl) {
         throw new Error('Contact form submission is unavailable right now.');
       }
 
-      const { error: insertError } = await supabase
-        .from('contact_submissions')
-        .insert([
-          {
-            name: formData.name,
-            mobile: formData.mobile,
-            city: formData.city,
-            scheme: formData.scheme,
-            message: formData.message,
-          },
-        ]);
+      const response = await fetch(webUrl, {
+        method: 'POST',
+        body: JSON.stringify({
+          name: formData.name,
+          mobile: formData.mobile,
+          email: formData.email,
+          city: formData.city,
+          scheme: formData.scheme,
+          message: formData.message,
+        }),
+      });
 
-      if (insertError) throw insertError;
+      const result = await response.json();
+      if (!result.success) {
+        throw new Error(result.error || 'Submission failed.');
+      }
 
       setSubmitted(true);
       setFormData({ name: '', mobile: '', email: '', city: '', scheme: '', message: '' });
