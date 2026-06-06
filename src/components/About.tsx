@@ -82,7 +82,7 @@ export default function About() {
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="flex gap-4 p-4 rounded-xl bg-[#123524]/5 border border-[#123524]/10">
+              <div className="flex gap-4 p-4 rounded-xl bg-[#CFAF5D]/8 border border-[#CFAF5D]/20">
                 <Target className="text-[#082340] mt-1 flex-shrink-0" size={22} />
                 <div>
                   <p className="font-semibold text-[#082340] mb-1">Our Mission</p>

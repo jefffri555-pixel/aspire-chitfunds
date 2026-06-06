@@ -121,7 +121,7 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
           </div>
           <div className="bg-[#F7F2E8] rounded-lg p-3 text-center">
             <p className="text-[#232323] font-bold text-lg">{scheme.months}</p>
-            <p className="text-[#E4C77A]/80 text-xs">Months</p>
+            <p className="text-[#000000]/80 text-xs">Months</p>
           </div>
         </div>
 
@@ -129,7 +129,7 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
           onClick={onToggle}
           className="w-full flex items-center justify-between px-4 py-3 rounded-xl border border-[#CFAF5D]/25 hover:border-[#CFAF5D]/60 hover:bg-[#CFAF5D]/5 transition-all mb-4"
         >
-          <span className="text-white text-sm font-semibold">View Scheme Details</span>
+          <span className="text-black text-sm font-semibold">View Scheme Details</span>
           {active ? <ChevronUp size={16} className="text-[#CFAF5D]" /> : <ChevronDown size={16} className="text-[#CFAF5D]" />}
         </button>
 
@@ -166,7 +166,7 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
           className={`flex items-center justify-center gap-2 w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 ${
             isGold
               ? 'btn-gold'
-              : 'border border-[#CFAF5D] text-white hover:bg-[#CFAF5D] hover:text-[#082340]'
+              : 'border border-[#CFAF5D] text-[#082340] bg-[#D4B16A] hover:bg-[#CFAF5D] hover:text-[#082340]'
           }`}
         >
           <Phone size={15} />
@@ -215,7 +215,7 @@ export default function ChitSchemes() {
           ))}
         </div>
 
-        <p className="text-center text-[#E4C77A]/60 text-sm mt-10 reveal">
+        <p className="text-center text-[#000000]/60 text-sm mt-10 reveal">
           * Scheme amounts and dividends are for illustration. Actual amounts may vary.
         </p>
       </div>
