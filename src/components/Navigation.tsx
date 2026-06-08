@@ -89,7 +89,7 @@ export default function Navigation() {
               onClick={() => handleNavClick('#contact')}
               className="btn-gold px-5 py-2.5 rounded-full text-sm"
             >
-              Join Now
+              <span className="text-[#082340]">Join Now</span>
             </button>
           </div>
 

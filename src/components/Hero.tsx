@@ -82,7 +82,7 @@ export default function Hero() {
               onClick={() => document.getElementById('schemes')?.scrollIntoView({ behavior: 'smooth' })}
               className="btn-gold px-8 py-4 rounded-full text-base font-semibold"
             >
-              Join a Chit Scheme
+              <span className="text-[#082340]">Join a Chit Schemes</span>
             </button>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
