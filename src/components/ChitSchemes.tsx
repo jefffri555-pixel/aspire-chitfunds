@@ -169,8 +169,8 @@ function SchemeCard({ scheme, active, onToggle }: { scheme: Scheme; active: bool
               : 'border border-[#CFAF5D] text-[#082340] bg-[#D4B16A] hover:bg-[#CFAF5D] hover:text-[#082340]'
           }`}
         >
-          <Phone size={15} />
-          Enquire Now
+          <Phone size={15} color="#082340"/>
+         <span className="text-[#082340]">Enquire Now</span> 
         </a>
       </div>
     </div>

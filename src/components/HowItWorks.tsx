@@ -91,12 +91,12 @@ export default function HowItWorks() {
         </div>
 
         <div className="text-center mt-14 reveal">
-          <p className="text-[#E4C77A]/80 mb-5 text-lg">Ready to start your savings journey?</p>
+          <p className="text-[#000000]/80 mb-5 text-lg">Ready to start your savings journey?</p>
           <button
             onClick={() => document.getElementById('schemes')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-gold px-8 py-4 rounded-full text-base font-semibold"
           >
-            View All Schemes
+            <span className="text-[#082340]">View All Schemes</span>
           </button>
         </div>
       </div>

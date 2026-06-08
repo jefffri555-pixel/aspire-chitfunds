@@ -11,9 +11,9 @@ const investmentTypes = [
 ];
 
 const strategies = [
-  { name: 'Conservative', risk: 'Low', return: '6-8%', desc: 'Emphasis on capital preservation' },
-  { name: 'Balanced', risk: 'Medium', return: '10-12%', desc: 'Mix of safety and growth' },
-  { name: 'Growth', risk: 'High', return: '14-16%+', desc: 'Maximum wealth accumulation' },
+  { name: 'Conservative', risk: 'Low', return: '6-8%',color: '#082340', desc: 'Emphasis on capital preservation' },
+  { name: 'Balanced', risk: 'Medium', return: '10-12%',color: '#082340', desc: 'Mix of safety and growth' },
+  { name: 'Growth', risk: 'High', return: '14-16%', color: '#082340', desc: 'Maximum wealth accumulation' },
 ];
 
 const benefits = [

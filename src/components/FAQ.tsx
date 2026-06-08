@@ -101,7 +101,7 @@ export default function FAQ() {
           ))}
         </div>
 
-        <p className="text-center text-[#232323]/65 text-sm mt-8 reveal">
+        <p className="text-center text-[#000000]/65 text-sm mt-8 reveal">
           Can't find the answer you're looking for? Contact our team at 95144 33333
         </p>
       </div>
